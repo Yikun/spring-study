@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+	<bean id="LiLei" class="com.kero.TalentShow.JumpRoper" />
+	
+	<bean id="HanMeimei" class="com.kero.TalentShow.JumpRoper">
+		<constructor-arg value="300"/>
+	</bean>
+
+	<bean id="atranquilnight" class="com.kero.TalentShow.TranquilNight" />
+	<bean id="XiaoMing" class="com.kero.TalentShow.PoeticJumpRoper">
+		<constructor-arg value="300"/>
+		<constructor-arg ref="atranquilnight"/>
+	</bean>
+</beans>

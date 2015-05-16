@@ -1,4 +1,4 @@
-package com.kero.SpringHello;
+package com.springstudy.hello;
 
 public class HelloSpring {
 	private String message;

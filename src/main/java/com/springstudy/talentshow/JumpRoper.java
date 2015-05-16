@@ -1,4 +1,4 @@
-package com.kero.TalentShow;
+package com.springstudy.talentshow;
 
 public class JumpRoper implements Performer {
 	private int times = 200;

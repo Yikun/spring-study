@@ -1,4 +1,4 @@
-package com.kero.TalentShow;
+package com.springstudy.talentshow;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class TalentShow {
 	public static void main(String[] args) {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
-				"com/kero/TalentShow/talent-show.xml");
+				"com/springstudy/talentshow/talent-show.xml");
 		
 		// 使用默认构造器
 		System.out.println("Performer1 start performing:");

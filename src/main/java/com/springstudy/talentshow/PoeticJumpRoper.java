@@ -1,4 +1,4 @@
-package com.kero.TalentShow;
+package com.springstudy.talentshow;
 
 public class PoeticJumpRoper extends JumpRoper {
 	private Poem poem;

@@ -5,14 +5,14 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
     
-	<bean id="LiLei" class="com.kero.TalentShow.JumpRoper" />
+	<bean id="LiLei" class="com.springstudy.talentshow.JumpRoper" />
 	
-	<bean id="HanMeimei" class="com.kero.TalentShow.JumpRoper">
+	<bean id="HanMeimei" class="com.springstudy.talentshow.JumpRoper">
 		<constructor-arg value="300"/>
 	</bean>
 
-	<bean id="atranquilnight" class="com.kero.TalentShow.TranquilNight" />
-	<bean id="XiaoMing" class="com.kero.TalentShow.PoeticJumpRoper">
+	<bean id="atranquilnight" class="com.springstudy.talentshow.TranquilNight" />
+	<bean id="XiaoMing" class="com.springstudy.talentshow.PoeticJumpRoper">
 		<constructor-arg value="300"/>
 		<constructor-arg ref="atranquilnight"/>
 	</bean>

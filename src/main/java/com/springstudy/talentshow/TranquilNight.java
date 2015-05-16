@@ -1,4 +1,4 @@
-package com.kero.TalentShow;
+package com.springstudy.talentshow;
 
 public class TranquilNight implements Poem {
 	private static String[] LINES = {

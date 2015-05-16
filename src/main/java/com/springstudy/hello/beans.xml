@@ -5,8 +5,8 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-   <bean id="helloWorld" class="com.kero.SpringHello.HelloSpring">
-       <property name="message" value="Hello 春天！"/>
+   <bean id="helloWorld" class="com.springstudy.hello.HelloSpring">
+       <property name="message" value="Hello Spring！"/>
    </bean>
 
 </beans>

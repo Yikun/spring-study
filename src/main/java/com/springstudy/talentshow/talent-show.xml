@@ -16,4 +16,10 @@
 		<constructor-arg value="300"/>
 		<constructor-arg ref="atranquilnight"/>
 	</bean>
+
+	<bean id="stage"
+	class="com.springstudy.talentshow.Stage"
+	factory-method="getInstance"
+	init-method="turnOnLights"
+	destroy-method="turnOffLights" />
 </beans>

@@ -8,6 +8,10 @@ public class TalentShow {
 		ApplicationContext ctx = new ClassPathXmlApplicationContext(
 				"com/springstudy/talentshow/talent-show.xml");
 		
+		// 使用工厂方法创建Bean, 并设置了初始化和销毁bean
+		Stage stage = (Stage) ctx.getBean("stage");
+		stage.show();
+
 		// 使用默认构造器
 		System.out.println("Performer1 start performing:");
 		Performer performer1 = (Performer) ctx.getBean("LiLei");
@@ -22,5 +26,7 @@ public class TalentShow {
 		System.out.println("Performer3 start performing:");
 		Performer performer3 = (Performer) ctx.getBean("XiaoMing");
 		performer3.perform();
+
+		((ClassPathXmlApplicationContext) ctx).close();
 	}
 }

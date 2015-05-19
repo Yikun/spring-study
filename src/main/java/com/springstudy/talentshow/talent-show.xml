@@ -22,4 +22,17 @@
 	factory-method="getInstance"
 	init-method="turnOnLights"
 	destroy-method="turnOffLights" />
+	
+	<bean id="saxophone" class="com.springstudy.talentshow.Saxophone"/>
+	<bean id="XiaoHong" class="com.springstudy.talentshow.Instrumentalist">
+		<property name="song" value="死了都要爱"/>
+		<property name="instrument" ref="saxophone"/>
+	</bean>
+	
+	<bean id="XiaoLi" class="com.springstudy.talentshow.Instrumentalist">
+		<property name="song" value="最炫民族风"/>
+		<property name="instrument">
+			<bean class="com.springstudy.talentshow.Saxophone"/>
+		</property>
+	</bean>
 </beans>

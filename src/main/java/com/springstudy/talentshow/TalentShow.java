@@ -26,6 +26,16 @@ public class TalentShow {
 		System.out.println("Performer3 start performing:");
 		Performer performer3 = (Performer) ctx.getBean("XiaoMing");
 		performer3.perform();
+		
+		// 使用构造器注入属性和对象引用
+		System.out.println("Performer4 start performing:");
+		Performer performer4 = (Performer) ctx.getBean("XiaoHong");
+		performer4.perform();
+		
+		// 注入内部Bean
+		System.out.println("Performer5 start performing:");
+		Performer performer5 = (Performer) ctx.getBean("XiaoLi");
+		performer5.perform();
 
 		((ClassPathXmlApplicationContext) ctx).close();
 	}

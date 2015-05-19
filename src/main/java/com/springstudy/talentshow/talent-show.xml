@@ -41,5 +41,15 @@
 		</property>
 	</bean>
 	
+	<bean id="piano" class="com.springstudy.talentshow.Piano"/>
+	<bean id="XiaoWang" class="com.springstudy.talentshow.SuperInstrumentalist">
+		<property name="instruments">
+			<list>
+				<ref bean="piano"/>
+				<ref bean="saxophone"/>
+			</list>
+		</property>
+	</bean>
+	
 
 </beans>

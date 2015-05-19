@@ -41,6 +41,11 @@ public class TalentShow {
 		System.out.println("Performer5 start performing:");
 		Performer performer6 = (Performer) ctx.getBean("XiaoLi");
 		performer6.perform();
+		
+		// 注入集合
+		System.out.println("Performer6 start performing:");
+		Performer performer7 = (Performer) ctx.getBean("XiaoWang");
+		performer7.perform();
 
 		((ClassPathXmlApplicationContext) ctx).close();
 	}

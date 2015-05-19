@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd">
@@ -29,10 +30,16 @@
 		<property name="instrument" ref="saxophone"/>
 	</bean>
 	
+	<bean id="XiaoHong2" class="com.springstudy.talentshow.Instrumentalist"
+		p:song = "死了都要爱-简化版"
+		p:instrument-ref = "saxophone"/>
+	
 	<bean id="XiaoLi" class="com.springstudy.talentshow.Instrumentalist">
 		<property name="song" value="最炫民族风"/>
 		<property name="instrument">
 			<bean class="com.springstudy.talentshow.Saxophone"/>
 		</property>
 	</bean>
+	
+
 </beans>

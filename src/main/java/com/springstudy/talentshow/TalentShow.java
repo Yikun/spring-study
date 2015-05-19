@@ -32,10 +32,15 @@ public class TalentShow {
 		Performer performer4 = (Performer) ctx.getBean("XiaoHong");
 		performer4.perform();
 		
+		// 使用命名空间装配属性
+		System.out.println("Performer5 start performing:");
+		Performer performer5 = (Performer) ctx.getBean("XiaoHong2");
+		performer5.perform();
+		
 		// 注入内部Bean
 		System.out.println("Performer5 start performing:");
-		Performer performer5 = (Performer) ctx.getBean("XiaoLi");
-		performer5.perform();
+		Performer performer6 = (Performer) ctx.getBean("XiaoLi");
+		performer6.perform();
 
 		((ClassPathXmlApplicationContext) ctx).close();
 	}
